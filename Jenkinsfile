@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-username>/jenkins-ci-python-demo.git'
+                git branch: 'main', url: 'https://github.com/sumankumarijakhar/PROG8860-Lab2.git'
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Notify') {
             steps {
-                mail to: 'your-email@conestogac.on.ca',
+                mail to: 'sjakhar5590@conestogac.on.ca',
                      subject: "Jenkins Build Notification",
                      body: "The Jenkins pipeline has completed."
             }
